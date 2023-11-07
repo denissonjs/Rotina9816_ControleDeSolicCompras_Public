@@ -1,9 +1,12 @@
 # Rotina9816_ControleDeSolicCompras_Public
 
-# Rotina9816_ControleDeSolicCompras
-
 # Sumário
 - [Descrição do Projeto](#descrição-do-projeto)
+    - [Objetivo do Projeto](#objetivo-do-sistema)
+    - [Funcionalidades](#funcionalidades-principais)
+    - [Flexibilidade](#flexibilidade-do-sistema)
+    - [Befefícios Esperados](#benefícios-do-sistema)
+    - [Resumo](#em-resumo)
 - [Requisitos do Sistema](#requisitos-do-sistema)
     - [Usuário](#usuário)
     - [Desenvolvedor](#desenvolvedor)
