@@ -12,9 +12,6 @@
     - [Desenvolvedor](#desenvolvedor)
 - [Detalhes Técnicos](#detalhes-técnicos)
     - [Arquitetura](#arquiterura)
-    - [Estrutura de diretórios](#estrutura-de-diretórios)
-    - [Nomenclatura de Controles](nomenclatura-de-controles)
-    - [Compilação e Execução](#compilação-e-execução)
     - [Controle de Versões](#controle-de-versões)
 - [Instruções de Instalação](#instruções-de-instalação)
 
@@ -100,63 +97,6 @@ Alguns exemplos da implementação deste modelo podem ser encontrados no vídeo 
 A arquitetura MVC oferece uma abordagem clara e estruturada para o desenvolvimento do projeto Windows Form .NET. Com a separação de responsabilidades e a facilidade de manutenção e teste, é possível desenvolver uma aplicação bem estruturada, escalável e de fácil evolução.
 
 Este projeto busca tirar proveito dessas vantagens e oferecer uma experiência de desenvolvimento mais organizada e eficiente. Para mais informações sobre a arquitetura MVC, consulte a documentação fornecida e aproveite os recursos e exemplos disponíveis para ajudá-lo a criar uma aplicação de qualidade.
-
-## Estrutura de diretórios
-
-A principal estrutura de pastas segue o padrão de pastas para projetos Windows Form .NET criado pelo Visual Studio 2022. **Os componentes da divisão de responsabilidades do ***padrão MVC*** serão gerenciados em pastas ao invés de ***Class Libraries***.**
-
-Models: 
-Views: 
-Controlers: 
-
-## Nomenclatura de Controles
-
-A nomenclatura dos controles (DataGridViews, TextBoxes, Labels, etc.) seguirá padronizado com a abreviação do tipo de controle seguido do nome do controle. Controles que possuem o mesmo nome mas que se encontram em containers (Tab Page) diferentes seguirão com a abreviação do controle seguida no nome do mesmo encerrando pelo nome do container separado por uma " _ ".
-
-Exemplo:
-1. TextBox que contém o "nome do usuário" em container único: tbNomeUsuario.
-2. Textbox que contém o "nome do usuário" em container múltiplo nomeado por "Cadastro" terá: tbNomeUsuario_Cadastro
-
-## Compilação e Execução
-
-### Pré-requisitos
-Certifique-se de que o seu sistema atenda aos [Requisitos](#requisitos_do_sistema_desenvolvedor) do Sistema mencionados na documentação.
-
-### Passo 1: Clonar o repositório
-1. Abra o Git Bash ou a ferramenta de linha de comando de sua preferência.
-2. Navegue até o diretório em que deseja clonar o repositório.
-3. Execute o seguinte comando: `git clone https://github.com/denissonjs/Rotina9817_AnaliseDeCredito`
-
-### Passo 2: Configurar o ambiente
-1. Abra o Visual Studio 2019 (ou superior).
-2. Selecione a opção "Abrir um projeto ou uma solução".
-3. Navegue até o diretório em que você clonou o repositório e selecione o arquivo de solução (.sln).
-4. Aguarde até que o Visual Studio carregue o projeto e suas dependências.
-
-### Passo 3: Restaurar os pacotes NuGet
-1. No Visual Studio, abra o "Gerenciador de Pacotes NuGet" clicando com o botão direito do mouse no projeto no "Solution Explorer" e selecionando a opção "Gerenciador de Pacotes NuGet".
-2. Na janela do "Gerenciador de Pacotes NuGet", clique na guia "Consolidar" para restaurar todos os pacotes NuGet necessários para o projeto.
-3. Aguarde até que o Visual Studio restaure todos os pacotes NuGet e resolva as dependências.
-
-### Passo 4: Configurar a conexão com o banco de dados Oracle
-1. Abra o arquivo "app.config" (ou "web.config") localizado na pasta do projeto.
-2. Localize a seção de configuração referente à conexão com o banco de dados Oracle.
-3. Insira as informações necessárias, como a string de conexão, nome do banco de dados, usuário e senha.
-4. Salve o arquivo de configuração.
-
-### Passo 5: Compilar e executar o projeto
-1. No Visual Studio, clique em "Compilar" para compilar o projeto.
-2. Após a compilação ser concluída sem erros, clique em "Executar" ou pressione F5 para iniciar a aplicação.
-
-## Colaboração
-### Atualização de Releases
-Antes de qualquer commit o arquivo Changelog.md deverá ser atualizado com as modificações que estão sendo enviadas. A versão lançada deverá seguir o [padrão de versionamento](#controle-de-versões) adotado no projeto.
-### Descrição de Commits
-Para garantir a padronização das mensagens de commit neste projeto, os commits deverão conter o título da versão que está sendo enviada para o repositório remoto. Isso ajudará a identificar claramente as alterações associadas a cada versão do projeto.
-### Efetuando Commit
-1. Para adicionar todas as modificações ao stage execute: `git add .`
-2. Para efetuar o commit execute: `git commit -m "Titulo da versao que esta sendo lançada"`.
-3. Para enviar as alterações para o repositório remoto execute: `git push`.
 
 ## Controle de Versões
 Para transparência em nossos ciclos de lançamento e para manter a compatibilidade com versões anteriores, a aplicação será mantida sob [as diretrizes de Controle de Versão Semântico](https://semver.org/) armazenados e disponíveis no arquivo de [Releases](https://github.com/denissonjs/Rotina9817_AnaliseDeCredito/blob/main/changelog.md) deste repositório. 
